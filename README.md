@@ -36,6 +36,7 @@ $ python
 
 ## For developers
 
+* **PKG-INFO** describes the package in a summarized way.
 * **MANIFEST.in** defines which files will be included into the package.
 * **pyproject.toml** defines the general packaging information.
 

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: pyrest
-Version: 1.0.0
+Version: 1.1.0
 Summary: A class to make HTTP REST requests
 Author: Flávio Gomes da Silva Lisboa
 Author-email: flavio.lisboa@fgsl.eti.br

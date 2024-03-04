@@ -78,14 +78,15 @@ class Rest:
         return response
 
     def assertResponse(self,expectedCode,response,verbose,data):
-        if response.status_code != expectedCode:
+        if self.isResponseCodeExpectable(expectedCode, response):
+            if verbose: print("Response Status OK for " + self.baseUrl)            
+        else:
             if verbose: 
                 print("Expected " + str(expectedCode) + " Received " + str(response.status_code))
             self.requestErrors[self.baseUrl] = response.status_code
             self.methodErrors[self.baseUrl] = self.method
             self.dataErrors[self.baseUrl] = str(data)
-        else:
-            if verbose: print("Response Status OK for " + self.baseUrl)
+
         if verbose: print("=" * 80)
         try:
             response_json = response.json()
@@ -96,4 +97,13 @@ class Rest:
             self.dataErrors[self.baseUrl] = str(data)
             return response.text
 
-        return dumps(response_json)        
+        return dumps(response_json)
+    
+    def isResponseCodeExpectable(self, expectedCode, response):
+        if isinstance(expectedCode, list):
+            for code in expectedCode:
+                if response.status_code == code: return True
+            return False
+        else:
+            return response.status_code == expectedCode
+        

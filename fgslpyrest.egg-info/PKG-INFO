@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fgslpyrest
-Version: 1.0.4
+Version: 1.1.0
 Summary: A class to make HTTP REST requests
 Author-email: Flávio Gomes da Silva Lisboa <flavio.lisboa@fgsl.eti.br>
 Project-URL: Homepage, https://github.com/fgsl/fgslpyrest
