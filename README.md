@@ -40,6 +40,8 @@ $ python
 * **MANIFEST.in** defines which files will be included into the package.
 * **pyproject.toml** defines the general packaging information.
 
+More information at https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
 ### Building the package
 
 ```shell
