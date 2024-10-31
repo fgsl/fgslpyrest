@@ -55,3 +55,19 @@ Requires `build` module. You can install it using `pip install build`.
 ```shell
 twine upload dist/*
 ```
+
+## Troubleshooting
+
+If you try to install and receive a error message with this fragments:
+
+`filename has 'fgslpyrest', but metadata has 'unknown'`
+
+`ERROR: No matching distribution found for fgslpyrest`
+
+Then run this command:
+
+```shell
+pip3 install --upgrade pip
+```
+
+And try to install again.
