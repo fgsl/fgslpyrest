@@ -10,4 +10,3 @@ fgslpyrest.egg-info/top_level.txt
 fgslpyrest/http/.gitignore
 fgslpyrest/http/Rest.py
 fgslpyrest/http/__init__.py
-fgslpyrest/http/resttest.py

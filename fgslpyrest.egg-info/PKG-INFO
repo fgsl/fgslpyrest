@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fgslpyrest
-Version: 1.1.2
+Version: 1.1.3
 Summary: A class to make HTTP REST requests
 Author-email: Flávio Gomes da Silva Lisboa <flavio.lisboa@fgsl.eti.br>
 Project-URL: Homepage, https://github.com/fgsl/fgslpyrest
@@ -56,6 +56,12 @@ $ python
 * **pyproject.toml** defines the general packaging information.
 
 More information at https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+## Running the unit tests
+
+```shell
+python -m unittest tests/resttest.py 
+```
 
 ### Building the package
 
