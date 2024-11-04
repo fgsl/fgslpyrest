@@ -42,6 +42,12 @@ $ python
 
 More information at https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
+## Running the unit tests
+
+```shell
+python -m unittest tests/resttest.py 
+```
+
 ### Building the package
 
 ```shell
